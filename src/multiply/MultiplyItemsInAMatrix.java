@@ -1,13 +1,19 @@
 package multiply;
 
 public class MultiplyItemsInAMatrix {
-    public static int[][] multiplyItems(int[][] matrix) {
+    public static int multiplyItems(int[][] matrix) {
+        if (matrix == null) {
+            return 0;
+        }
+
         for (int i = 0; i < matrix.length; i++) {
             for (int j = 0; j < matrix.length; j++) {
             }
         }
 
-        return matrix;
+        int multiply = 0;
+
+        return multiply;
     }
 
     public static void main(String[] args) {
