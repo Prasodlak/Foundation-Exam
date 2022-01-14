@@ -165,5 +165,14 @@ computer-shop
 ### Solution
 
 ```text
-*type your answer here*
+mv desktop/instock/ desktop/in-stock/
+mv laptop/transit-summary.csv laptop/in-transit/summary.csv
+head -n -2 laptop/in-stock/summary.csv
+cd desktop
+git add .
+git commit -m "renamed instock to in-stock"
+cd ..
+cd laptop
+git add .
+git commit -m "moved transit-summary to /in-transit folder and renamed, removed 2 lines from summary.csv"
 ```
