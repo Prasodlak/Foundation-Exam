@@ -7,24 +7,22 @@ public class MultiplyItemsInAMatrix {
         }
 
         for (int i = 0; i < matrix.length; i++) {
-            for (int j = 0; j < matrix.length; j++) {
+            for (int j = 0; j < matrix[i].length; j++) {
+                if (i % 2 == 0) {
+                    System.out.print(matrix[i][j] + "EVEN ");
+                }
+                else {
+                    System.out.print(matrix[i][j] + "ODD ");
+                }
             }
+            System.out.println();
         }
 
-        int multiply = 0;
+        int multiplyMatrix = 0;
 
-        return multiply;
-    }
-
-    public static void main(String[] args) {
-        int[][] matrix = {
-                {1, 3, 6, 2},
-                {7, 5, 6, 1},
-                {3, 3, 1, 5},
-                {9, 0, 5, 3},
-        };
-
-        System.out.println(multiplyItems(matrix));
+        return multiplyMatrix;
     }
 
 }
+
+// No time to figure out full solution sorry...
